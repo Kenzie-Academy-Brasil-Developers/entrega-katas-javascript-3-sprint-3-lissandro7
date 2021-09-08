@@ -4,7 +4,7 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
 
 
 function showResults(tit, parametro) {
-    const corpo = document.getElementById('teste');
+    const corpo = document.querySelector('body');
     const menu = document.createElement('div');
     const adc = document.createElement('p');
     const titulo = document.createElement("h3");
