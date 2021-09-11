@@ -1,8 +1,5 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
-
-
-
 function showResults(tit, parametro) {
     const corpo = document.querySelector('body');
     const menu = document.createElement('div');
@@ -24,10 +21,10 @@ function kata1() {
 
         guardar.push(" " + c + " ");
     }
-    return showResults(" Numeros de 1 a 25", guardar)
+    return guardar;
 }
+showResults(" Numeros de 1 a 25", kata1())
 
-kata1();
 
 function kata2() {
     let guardar = [];
@@ -35,10 +32,10 @@ function kata2() {
 
         guardar.push(" " + c + " ");
     }
-    return showResults(" Numeros de 1 a 25", guardar)
+    return guardar;
 }
 
-kata2();
+showResults(" Numeros de 1 a 25", kata2());
 
 function kata3() {
 
@@ -47,8 +44,9 @@ function kata3() {
 
         guarda.push(" " + c + " ")
     }
-    return showResults("Numeros -1 a -25", guarda)
+    return guarda;
 }
+showResults("Numeros -1 a -25", kata3());
 
 kata3();
 
@@ -58,9 +56,10 @@ function kata4() {
 
         guardar.push(" " + c + " ")
     }
-    return showResults("Numeros -25 a -1 ", guardar)
+    return guardar
 }
-kata4();
+
+showResults("Numeros -25 a -1 ", kata4());
 
 function kata5() {
     let guardar = [];
@@ -70,9 +69,10 @@ function kata5() {
             guardar.push(" " + c + " ")
         }
     }
-    return showResults("Numeros impares de 25 a -25", guardar)
+    return guardar;
 }
-kata5();
+
+showResults("Numeros impares de 25 a -25", kata5());
 
 function kata6() {
     let guardar = [];
@@ -82,10 +82,10 @@ function kata6() {
             guardar.push(" " + c + " ")
         }
     }
-    return showResults("Numeros Divisiveis por 3. de 3 ate o 100", guardar)
+    return guardar
 }
 
-kata6();
+showResults("Numeros Divisiveis por 3. de 3 ate o 100", kata6());
 
 function kata7() {
     let guardar = [];
@@ -95,9 +95,10 @@ function kata7() {
             guardar.push(" " + c + " ");
         }
     }
-    return showResults("Numeros divisiveis por 7. de 7 ate o 100", guardar)
+    return guardar
 }
-kata7();
+showResults("Numeros divisiveis por 7. de 7 ate o 100", kata7());
+
 function kata8() {
     let guardar = []
 
@@ -106,9 +107,10 @@ function kata8() {
             guardar.push(" " + c + " ")
         }
     }
-    return showResults("Numeros divisiveis por 3 e 7 apartir de 100", guardar)
+    return guardar
 }
-kata8();
+
+showResults("Numeros divisiveis por 3 e 7 apartir de 100", kata8());
 
 function kata9() {
     let guardar = [];
@@ -118,9 +120,10 @@ function kata9() {
             guardar.push(" " + c + " ")
         }
     }
-    return showResults("Numeros impares e divisiveis por 5 ", guardar)
+    return guardar
 }
-kata9();
+
+showResults("Numeros impares e divisiveis por 5 ", kata9());
 
 function kata10() {
 
@@ -129,12 +132,10 @@ function kata10() {
 
         opa.push(sampleArray[c])
     }
-
-    return showResults("Os 20 elementos do array", opa)
-
-
+    return opa
 }
-kata10();
+showResults("Os 20 elementos do array", kata10())
+
 
 function kata11() {
 
@@ -144,9 +145,10 @@ function kata11() {
             opa.push(" " + sampleArray[c] + " ")
         }
     }
-    return showResults("Numeros pares do array ", opa)
+    return opa
 }
-kata11();
+
+showResults("Numeros pares do array ", kata11())
 
 function kata12() {
 
@@ -157,9 +159,10 @@ function kata12() {
             opa.push(" " + sampleArray[c] + " ")
         }
     }
-    return showResults("Numeros impares do array", opa)
+    return opa;
 }
-kata12();
+
+showResults("Numeros impares do array", kata12());
 
 function kata13() {
 
@@ -170,9 +173,10 @@ function kata13() {
             opa.push(" " + sampleArray[c] + " ")
         }
     }
-    return showResults("Numeros divisiveis por 8 no array", opa)
+    return opa;
 }
-kata13();
+showResults("Numeros divisiveis por 8 no array", kata13());
+
 
 function kata14() {
 
@@ -183,9 +187,10 @@ function kata14() {
         armazenar.push(" " + quadrado + " ")
     }
 
-    return showResults("Numero quadrado do array", armazenar)
+    return armazenar
 }
-kata14();
+showResults("Numero quadrado do array", kata14());
+
 
 function kata15() {
 
@@ -193,9 +198,10 @@ function kata15() {
     for (let c = 0; c <= 20; c++) {
         soma += c;
     }
-    return showResults("Soma dos Numeros de 1 a 20", soma)
+    return soma
 }
-kata15();
+showResults("Soma dos Numeros de 1 a 20", kata15());
+
 
 function kata16() {
 
@@ -204,9 +210,10 @@ function kata16() {
 
         soma += c;
     }
-    return showResults("Soma so Array", soma)
+    return soma
 }
-kata16();
+
+showResults("Soma so Array", kata16())
 
 
 function kata17() {
@@ -215,16 +222,16 @@ function kata17() {
     for (let c = 0; c < sampleArray.length; c++) {
         if (sampleArray[c] < menos) {
             menos = sampleArray[c];
-
         }
     }
-    return showResults("Menor Numero do Array", menos);
+    return menos;
 }
 
-kata17();
+showResults("Menor Numero do Array", kata17());
+
 
 function kata18() {
-    
+
     let mais = sampleArray[0];
     for (let c = 0; c < sampleArray.length; c++) {
         if (sampleArray[c] > mais) {
@@ -232,10 +239,11 @@ function kata18() {
         }
     }
 
-    return showResults("Maior Numnero do Array", mais)
+    return mais
 }
 
-kata18();
+showResults("Maior Numnero do Array", kata18());
+
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
